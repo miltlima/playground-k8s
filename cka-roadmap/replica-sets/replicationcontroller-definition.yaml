@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: app-rc
+  labels:
+
+spec:
+  template:
+    metadata:
+      name: meu-app-rc
+      labels:
+        app: app
+        type: front-end
+      spec:
+        containers:
+        - name: nginx-container
+          image: nginx
