@@ -1,17 +1,25 @@
 # K8s playground 
 
-->![ kubernetes logo ](https://apprenda.com/wp-content/uploads/Webinar_K8S101_K8slogo.png)<-
+<p align="center">
+  <img width="" height="" src="https://apprenda.com/wp-content/uploads/Webinar_K8S101_K8slogo.png">
+</p>
+
 
 Deploy do K8s  usando Vagrant + Ansible, este deploy é para fins didáticos favor utilizar apenas em ambiente de testes, as versões dos software utilizadas foram:
 
-Requerimentos
+### Requerimentos
+``` shell
 * Vagrant 2.2.14
 * Virtualbox 6.1.16
 * Python 3.8.6
 * Ansible 2.9.9
-
-
-Downloads
+```
+Criei um executavel para facilitar a instalacao das ferramentas , basta executar install.sh e a instalacao das depenencias sera feita automaticamente
+``` shell
+./install.sh
+```
+ou você pode instalar as ferramentas manualmente
+### Downloads
 * Vagrant
   Download -> https://www.vagrantup.com/downloads
 * VirtualBox
