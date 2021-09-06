@@ -1,6 +1,6 @@
 # K8s playground 
 
-![ kubernetes logo ](https://apprenda.com/wp-content/uploads/Webinar_K8S101_K8slogo.png)
+->![ kubernetes logo ](https://apprenda.com/wp-content/uploads/Webinar_K8S101_K8slogo.png)<-
 
 Deploy do K8s  usando Vagrant + Ansible, este deploy é para fins didáticos favor utilizar apenas em ambiente de testes, as versões dos software utilizadas foram:
 
