@@ -28,3 +28,18 @@ ou você pode instalar as ferramentas manualmente
   Download -> https://www.python.org/downloads/
 * Ansible
   Informações sobre instalação no windows -> https://www.ansible.com/for/windows
+
+
+### Modo de uso
+
+Entre na pasta do projeto e execute o script onde esta o Vagrantfile:
+
+``` shell
+vagrant up
+```
+
+Aguarde o termino das confs, para acessar o cluster, basta digitar:
+
+``` shell
+vagrant ssh
+```
