@@ -14,7 +14,7 @@ Deploy do K8s  usando Vagrant + Ansible, este deploy é para fins didáticos fav
 * Python 3.8.6
 * Ansible 2.9.9
 ```
-Criei um executavel para facilitar a instalacao das ferramentas , basta executar install.sh e a instalacao das depenencias sera feita automaticamente
+Criei um executável para facilitar a instalação das ferramentas, basta executar install.sh e a instalação das dependências sera feita automaticamente
 ``` shell
 ./install.sh
 ```
