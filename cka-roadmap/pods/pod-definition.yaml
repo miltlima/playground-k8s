@@ -1,0 +1,13 @@
+apiVesion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx-pod
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+    ports:
+    - containerPort: 8080
+      protocol: TCP
