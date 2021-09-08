@@ -43,3 +43,11 @@ Aguarde o termino das confs, para acessar o cluster, basta digitar:
 ``` shell
 vagrant ssh k8s-master
 ```
+
+### Sumário
+#### Principais Conceitos
+  * Cluster
+  * PODs
+  * Replica Sets
+  * Deployments
+  * Namespaces
