@@ -18,7 +18,7 @@ Criei um executável para facilitar a instalação das ferramentas, basta execut
 ``` shell
 ./install.sh
 ```
-ou você pode instalar as ferramentas manualmente
+Ou você pode instalar as ferramentas manualmente
 ### Downloads
 * Vagrant
   Download -> https://www.vagrantup.com/downloads
@@ -41,5 +41,5 @@ vagrant up
 Aguarde o termino das confs, para acessar o cluster, basta digitar:
 
 ``` shell
-vagrant ssh
+vagrant ssh k8s-master
 ```
