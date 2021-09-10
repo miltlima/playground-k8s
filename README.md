@@ -14,9 +14,13 @@ Deploy do K8s  usando Vagrant + Ansible, este deploy é para fins didáticos fav
 * Python 3.8.6
 * Ansible 2.9.9
 ```
+
 Criei um executável para facilitar a instalação das ferramentas, basta executar install.sh e a instalação das dependências sera feita automaticamente
+
 ``` shell
+
 ./install.sh
+
 ```
 Ou você pode instalar as ferramentas manualmente
 ### Downloads
@@ -28,8 +32,7 @@ Ou você pode instalar as ferramentas manualmente
   Download -> https://www.python.org/downloads/
 * Ansible
   Informações sobre instalação no windows -> https://www.ansible.com/for/windows
-
-
+                                                                                             
 ### Modo de uso
 
 Entre na pasta do projeto e execute o script onde esta o Vagrantfile:
@@ -46,12 +49,13 @@ vagrant ssh k8s-master
 
 ### Sumário
 #### Principais Conceitos
-  * Cluster
-  * PODs
-  * Replica Sets
-  * Deployments
-  * Namespaces
+
+* Cluster
+* PODs
+* Replica Sets
+* Deployments
+* Namespaces
 
 ### Material de apoio
 
-  * #KubernetesParaTodos - #CanalBL2 - https://www.youtube.com/playlist?list=PLp3of5KPpStvCBd1SDBkxIxcomE30Mlym
+* #KubernetesParaTodos - #CanalBL2 - https://www.youtube.com/playlist?list=PLp3of5KPpStvCBd1SDBkxIxcomE30Mlym
