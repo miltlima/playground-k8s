@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: netshoot-namespace
+  name: netshoot-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: netshoot
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: netshoot
+    spec:
+      containers:
+      - image: nicolaka/netshoot
+        name: netshoot
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        ports:
+        - containerPort: 8420
+          protocol: TCP
+      restartPolicy: Always
