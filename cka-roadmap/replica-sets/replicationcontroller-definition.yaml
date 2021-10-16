@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: app-rc
   labels:
-
+    app: app-rc
 spec:
   template:
     metadata:
