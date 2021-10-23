@@ -20,14 +20,14 @@ Vagrant.configure('2') do |config|
             }
         end
     end
-
+end
     (1..N).each do |i|
         config.vm.define "k8s-worker-#{i}" do |node|
             node.vm.box = IMAGE_NAME
             node.vm.network "private_network", ip: "10.11.12.#{i + 13}"
             node.vm.hostname = "k8s-worker-#{i}"
             node.vm.provision "ansible" do |ansible|
-                ansible.playbook = "ansible_k8s/node-playbook.yml"
+                ansible.playbook = "ansible_k8s/worker-playbook.yml"
                 ansible.extra_vars = {
                     node_ip: "10.11.12.#{i + 13}",
                 }
