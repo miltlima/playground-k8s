@@ -92,7 +92,7 @@
       state: restarted
 
   - name: Inicializar o kubernetes usando o kubeadm
-    command: kubeadm init --apiserver-advertise-address="10.11.12.13" --apiserver-cert-extra-sans="10.11.12.13"  --node-name k8s-master --pod-network-cidr=10.123.0.0/16
+    command: kubeadm init --apiserver-advertise-address="10.11.12.10" --apiserver-cert-extra-sans="10.11.12.10"  --node-name k8s-budapest-0000 --pod-network-cidr=10.123.0.0/16
 
   - name: Configura kubeconfig para o usuário vagrant
     command: "{{ item }}"
@@ -105,9 +105,15 @@
     become: false
     command: kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
+  - name: Checar se join token foi existe
+    stat:
+      path: /ansible_k8s/join_command
+    register: join_command_exists
+
   - name: Criar comando com token para ingressar node ao cluster
     command: kubeadm token create --print-join-command
     register: join_command
+    when: join_command_exists.stat.exists == False
 
   - name: Copiar join para arquivo local
     become: false
