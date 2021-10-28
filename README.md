@@ -55,7 +55,3 @@ vagrant ssh k8s-master
 * Replica Sets
 * Deployments
 * Namespaces
-
-### Material de apoio
-
-* #KubernetesParaTodos - #CanalBL2 - https://www.youtube.com/playlist?list=PLp3of5KPpStvCBd1SDBkxIxcomE30Mlym
