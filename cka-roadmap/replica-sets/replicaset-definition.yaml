@@ -12,12 +12,12 @@ spec:
       labels:
         app: meuapp
         type: front-end
-      spec:
-        containers:
-        - name: nginx-container
-          image: nginx
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
 
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       type: front-end
