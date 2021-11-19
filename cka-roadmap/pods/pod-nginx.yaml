@@ -7,7 +7,7 @@ metadata:
   name: nginx
 spec:
   containers:
-  - image: nginx
+  - image: nginx:1.18
     name: nginx
     resources: {}
   dnsPolicy: ClusterFirst
