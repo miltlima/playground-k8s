@@ -1,0 +1,33 @@
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: storage-admin
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - persistentvolumes
+  - persistentvolumeclaims
+  - storageclasses
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - delete
+
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: michelle-storage-admin
+subjects:
+- kind: User
+  name: michelle
+  namespace: default
+  apiGroup: rba.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: storage-admin
+  apiGroup: rbac.authorization.k8s.io
