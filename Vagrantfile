@@ -1,5 +1,5 @@
 IMAGE_NAME = "bento/ubuntu-20.04"
-N = 5
+N = 2
 
 Vagrant.configure('2') do |config|
     config.ssh.insert_key = false
