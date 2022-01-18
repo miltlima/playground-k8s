@@ -101,9 +101,9 @@
       - cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
       - chown vagrant:vagrant /home/vagrant/.kube/config
 
-  - name: Instalar provider de rede para pod calico
+  - name: Instalar provider de rede para pod weave net
     become: false
-    command: kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
+    command: kubectl create -f https://cloud.weave.works/launch/k8s/weavescope.yaml
 
   - name: Checar se join token foi existe
     stat:
