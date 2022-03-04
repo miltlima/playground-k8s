@@ -92,7 +92,7 @@
       state: restarted
 
   - name: Inicializar o kubernetes usando o kubeadm
-    command: kubeadm init --apiserver-advertise-address="10.11.12.10" --apiserver-cert-extra-sans="10.11.12.10"  --node-name k8s-budapest-0000 --pod-network-cidr=10.123.0.0/16
+    command: kubeadm init --apiserver-advertise-address="10.11.12.10" --apiserver-cert-extra-sans="10.11.12.10"  --node-name k8s-master --pod-network-cidr=10.123.0.0/16
 
   - name: Configura kubeconfig para o usuário vagrant
     command: "{{ item }}"

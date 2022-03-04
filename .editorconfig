@@ -5,9 +5,6 @@ end_of_line = lf
 insert_final_newline = true
 
 [*.yaml, yml]
-
-[*.yaml]
-
 indent_style = space
 indent_size = 2
 
