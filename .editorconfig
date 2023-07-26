@@ -4,9 +4,15 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-[*.yaml, yml]
+[*.yaml]
 indent_style = space
 indent_size = 2
+insert_final_newline = true
+
+[*.yml]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
 
 [Makefile]
 indent_style = tab
