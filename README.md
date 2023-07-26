@@ -1,13 +1,11 @@
-# K8s playground 
+# K8s playground
 
-<p align="center">
-  <img width="" height="" src="https://apprenda.com/wp-content/uploads/Webinar_K8S101_K8slogo.png">
-</p>
-
+<p align="center"><img width="" height="" src="https://apprenda.com/wp-content/uploads/Webinar_K8S101_K8slogo.png"></p>
 
 Deploy do K8s  usando Vagrant + Ansible, este deploy é para fins didáticos favor utilizar apenas em ambiente de testes, as versões dos software utilizadas foram:
 
-### Requerimentos
+## Requerimentos
+
 ``` shell
 * Vagrant 2.2.14
 * Virtualbox 6.1.16
@@ -22,8 +20,11 @@ Criei um executável para facilitar a instalação das ferramentas, basta execut
 ./install.sh
 
 ```
+
 Ou você pode instalar as ferramentas manualmente
-### Downloads
+
+## Downloads
+
 * Vagrant
   Download -> https://www.vagrantup.com/downloads
 * VirtualBox
@@ -32,7 +33,7 @@ Ou você pode instalar as ferramentas manualmente
   Download -> https://www.python.org/downloads/
 * Ansible
   Informações sobre instalação no windows -> https://www.ansible.com/for/windows
-                                                                                             
+
 ### Modo de uso
 
 Entre na pasta do projeto e execute o script onde esta o Vagrantfile:
@@ -48,6 +49,7 @@ vagrant ssh k8s-master
 ```
 
 ### Sumário
+
 #### Principais Conceitos
 
 * Cluster
